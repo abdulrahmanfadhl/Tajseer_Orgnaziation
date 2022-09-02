@@ -1,0 +1,133 @@
+.main_table{
+width: 95%;
+margin: 0rem auto;
+margin-top: -11rem;
+background: #222;
+border-radius: 1rem;
+-webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+        box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+padding: 3rem 2rem;
+}
+
+.main_table table thead tr th{
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+.main_table table tbody tr td{
+    font-size: 1.2rem;
+}
+
+table {
+    empty-cells: hide;
+    table-layout: fixed;
+    display: block;
+    width: 100%;
+    }   
+
+
+tr, td {
+display: block;
+font-size: inherit;
+
+}
+
+thead {
+display: none;
+}
+
+
+
+td {
+padding: 8px 8px 0;
+text-align: right;
+color: #aaa;
+}
+td:before {
+content: attr(data-title);
+color: #7a91aa;
+padding-right: 5px;
+display: block;
+} 
+
+
+th {
+background: #29d9d5;
+text-align: center;
+font-weight: 700;
+color: rgb(5, 5, 5);
+border: 1px solid #29d9d5;
+}
+
+
+
+
+.btn_del , .btn_updat {
+line-height: 1;
+display: inherit;
+font-size: 1.2rem;
+text-decoration: none;
+border-radius: 5px;
+color: #29d9d5;
+padding: 10px;
+cursor: pointer;
+background: none;
+border: 0.2rem solid #29d9d5;
+
+
+}
+
+.btn_del:hover , .btn_updat:hover{ 
+    background: #29d9d5;
+color: #111;
+}
+
+td.operat {
+padding-bottom: 20px;
+border-bottom: 1px solid #29d9d5;
+}
+
+
+
+@media (min-width: 460px) {
+td {
+    text-align: right;
+}
+td:before {
+    display: inline-block;
+    text-align: right;
+    width: 160px;
+}
+td.operat{
+    text-align: right;
+}
+}
+@media (min-width: 720px) {
+table {
+    display: table;
+}
+
+tr {
+    display: table-row;
+}
+
+td, th {
+    display: table-cell;
+}
+
+tbody {
+    display: table-row-group;
+}
+
+thead {
+    display: table-header-group;
+}
+
+
+td:before {
+    display: none;
+}
+
+.btn_del ,.btn_updat {
+    display: inline-flex;
+}
+}

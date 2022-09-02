@@ -1,0 +1,170 @@
+@font-face{
+  font-family: 'Droid Arabic Kufi' ;
+  src : url('DroidKufi-Bold.ttf');
+}
+:root{  
+
+  --violet:black;
+  --pink:#277481;
+  --gradient:linear-gradient(90deg, var(--violet), var(--pink));
+}
+/* *{
+  color:  #111; 
+  font-family: 'Droid Arabic Kufi';
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;} */ 
+  /* * {
+    font-family: 'Droid Arabic Kufi' ;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  } */
+  body {
+     font-family: 'Droid Arabic Kufi' ; 
+
+    background: #111;
+    overflow-x: hidden;
+  }
+.button-panel2 {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.button-panel2 .button {
+  background: #7ba2ac;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'helvetica','Open Sans', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.6s linear;
+  width: 100%;
+  margin-top:10px;
+}
+
+.button:hover {
+  background: #277481;
+}
+
+.form-item input, .button-panel2 .button {
+  border-radius: 2px
+}
+
+.form-wrapper {
+width:400px;
+height:370px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  margin: -184px 0px 0px -155px;
+  background: var(--gradient);
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
+}
+
+.form-item {
+width:100%;
+}
+
+
+h3{
+  font-size: 25px;
+  font-weight: 640;
+  margin-bottom: 10px;
+  color: #e7e7e7;
+  padding:6px;
+  font-family:'sans-serif','helvetica';
+}
+
+
+
+.form-item input{
+  border: none;
+  background:transparent;
+  color: #fff;
+  margin-top:11px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  height: 49px;
+  padding: 0 16px;
+  width: 100%;
+  padding-left: 55px;
+}
+.form-item input::placeholder{
+  color: #fff;
+  opacity: 0.5;
+}
+
+input[type='password']{
+	background: transparent url("img/pass.jpg") no-repeat;
+	background-position: 10px 50%;
+}
+input[type='text']{
+	background: transparent url("img/user.jpg") no-repeat;
+	background-position: 10px 50%;
+
+}
+
+.form-item input:focus {
+  outline: none;
+  border:1.4px solid #ffffff;
+}
+
+.button-panel {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #7ba2ac;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'helvetica','Open Sans', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.6s linear;
+  width: 100%;
+  margin-top:10px;
+}
+
+.button:hover {
+  background: #277481;
+}
+
+.form-item input, .button-panel .button {
+  border-radius: 2px
+}
+
+.logout {
+  text-align: center;
+  margin-top: 50% !important;
+}
+
+.logout a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logout a:hover {
+  color: #cab6bf;
+}
